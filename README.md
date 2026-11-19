@@ -29,7 +29,7 @@
 ├── manifest.json   # Chrome拡張機能のマニフェスト（Manifest V3）
 ├── background.js   # 通信監視・ペイロード解析・状態管理（Service Worker）
 ├── content.js      # 入力フォーム検知・警告バナー描画（Shadow DOM）
-├── LICENSE         # MIT LicensesE
+├── LICENSE         # MIT License
 ├── popup.html      # ツールバーアイコンクリック時のUI
 ├── popup.js        # 検知レポートの描画ロジック
 └── README.md       # この資料
