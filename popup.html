@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 360px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 12px;
+      background: #f8f9fa;
+      color: #202124;
+    }
+    h1 {
+      font-size: 14px;
+      margin: 0 0 10px;
+      border-bottom: 1px solid #dadce0;
+      padding-bottom: 6px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 6px;
+      padding: 8px 10px;
+      margin-bottom: 8px;
+      border-left: 4px solid #f29900;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+    }
+    .card.high { border-left-color: #d93025; }
+    .card.low { border-left-color: #1e8e3e; }
+    .title { font-weight: bold; font-size: 13px; }
+    .meta { font-size: 11px; color: #5f6368; margin-top: 2px; }
+    .desc { font-size: 12px; margin-top: 4px; }
+    .empty { font-size: 12px; color: #5f6368; text-align: center; padding: 16px 0; }
+    h2 { font-size: 12px; color: #5f6368; margin: 12px 0 6px; }
+    ul { margin: 0; padding-left: 16px; font-size: 11px; color: #3c4043; }
+    li { margin-bottom: 3px; word-break: break-all; }
+  </style>
+</head>
+<body>
+  <h1>外部データ送信の検知レポート</h1>
+  <div id="known-list"></div>
+  <div id="unknown-section" style="display:none;">
+    <h2>その他の外部POST / API通信</h2>
+    <ul id="unknown-list"></ul>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

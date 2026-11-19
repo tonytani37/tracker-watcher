@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "External Data Watcher",
+  "version": "0.3.0",
+  "description": "閲覧中サイトから外部の解析・CXツールへ送信される通信とペイロードを検知・可視化します。",
+  "permissions": [
+    "webRequest",
+    "tabs",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "外部データ送信の監視状況"
+  }
+}
